@@ -15,6 +15,7 @@ var app = new Vue({
     response_json: {},
     flames_value: '',
     Ttl_Lngth: '',
+    retry:''
 },
 methods: {
 	flame: function() {
@@ -42,7 +43,7 @@ methods: {
 				this.yourNameList = response.data.rslt_ur_name;
 				this.hisHerNameList = response.data.rslt_his_name;
 				this.Ttl_Lngth =  response.data.flm_length;
-
+				this.retry = 'retry';
 				});
 		  this.inputMode = false;
                   this.outputMode = true;
